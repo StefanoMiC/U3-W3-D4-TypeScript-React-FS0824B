@@ -7,7 +7,8 @@ export default defineConfig({
   plugins: [
     react(),
     checker({
-      typescript: true
+      // typescript: { buildMode: true }
+      typescript: { tsconfigPath: "./tsconfig.app.json" }
     })
   ]
 });
