@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 // creiamo un'interfaccia per le props di questo componente
 // siccome è un'interfaccia specifica di questo componente la creeremo qui dentro
 interface ClassComponentProps {
@@ -28,6 +29,7 @@ class ClassComponent extends Component<ClassComponentProps, ClassComponentState>
         <h2 style={{ color: this.props.color }}>Componente a Classe{this.state.isLoading ? "..." : ""}</h2>
         <p>{this.props.subtitle}</p>
         <p>ENV-SECRET-KEY: {import.meta.env.VITE_SECRET_KEY}</p>
+        <Link to="/functional">Vai al functional component</Link>
       </div>
     );
   }
