@@ -18,8 +18,8 @@ interface ClassComponentState {
 // Così facendo il componente non riceverà come valore di tipo per entrambi {}, ma sarà una definizione che corrisponderà effettivamente ai
 //  valori passati come props e ai valori di stato
 
-class ClassComponent extends Component<ClassComponentProps, ClassComponentState> {
-  state = {
+class ClassComponent extends Component<ClassComponentProps> {
+  state: ClassComponentState = {
     isLoading: true
   };
 
