@@ -33,9 +33,9 @@ const FetchComponent = () => {
       <Row className="justify-content-center">
         <Col xs={12} md={8}>
           <Row>
-            {/* {books.map(book => (
+            {books.map(book => (
               <SingleBook book={book} another={true} />
-            ))} */}
+            ))}
           </Row>
         </Col>
       </Row>
